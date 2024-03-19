@@ -1,12 +1,9 @@
-import { ReactNode } from "react"
+import type { ReactNode } from "react";
 
 interface ButtonProps {
-  children: ReactNode;
+	children: ReactNode;
 }
-export function Button({children}: ButtonProps): ReactNode {
-  return (
-    <button className="py-2 px-6 border rounded bg-black text-white">
-      {children}
-    </button>
-  )
-}
+
+export const Button = ({ children }: ButtonProps): ReactNode => {
+	return <button className="bg-red-700">{children}</button>;
+};
